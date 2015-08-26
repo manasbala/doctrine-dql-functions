@@ -1,0 +1,28 @@
+{
+  "name": "mb/pgsql-doctrine-dql-functions",
+  "type": "library",
+  "description": "Doctrine DQL Functions for PostgreSQL",
+  "homepage": "https://github.com/manasbala/pgsql-doctrine-dql-functions",
+  "keywords": ["doctrine", "pgsql", "dql"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Manas Bala",
+      "email": "manas.du@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "doctrine/orm": ">=2.2.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "3.7.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Mb\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
