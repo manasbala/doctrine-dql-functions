@@ -1,5 +1,5 @@
 {
-  "name": "manasbala/pgsql-doctrine-dql-functions",
+  "name": "manasbala/doctrine-dql-functions",
   "type": "library",
   "description": "Doctrine DQL Functions for PostgreSQL",
   "homepage": "https://github.com/manasbala/doctrine-dql-functions",
