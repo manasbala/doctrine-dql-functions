@@ -1,8 +1,8 @@
 {
-  "name": "mb/pgsql-doctrine-dql-functions",
+  "name": "manasbala/pgsql-doctrine-dql-functions",
   "type": "library",
   "description": "Doctrine DQL Functions for PostgreSQL",
-  "homepage": "https://github.com/manasbala/pgsql-doctrine-dql-functions",
+  "homepage": "https://github.com/manasbala/doctrine-dql-functions",
   "keywords": ["doctrine", "pgsql", "dql"],
   "license": "MIT",
   "authors": [
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-0": {
-      "Mb\\": "src/"
+      "MB\\": "src/"
     }
   },
   "minimum-stability": "stable"
