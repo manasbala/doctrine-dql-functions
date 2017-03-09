@@ -6,7 +6,7 @@
  * Time: 10:15 AM
  */
 
-namespace Mb\DQL\DateTime;
+namespace MB\DQL\DateTime;
 
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 use Doctrine\ORM\Query\Lexer;
