@@ -29,7 +29,7 @@ class Date extends FunctionNode
     {
         $driver = $sqlWalker->getConnection()->getDriver();
 
-        switch($driver) {
+        switch($driver->getName()) {
             case ("pdo_mysql"):
                 return "DATE(".$this->dateExpression->dispatch($sqlWalker).")";
                 break;
