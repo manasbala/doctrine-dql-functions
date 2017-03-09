@@ -27,6 +27,18 @@ class Date extends FunctionNode
 
     public function getSql(SqlWalker $sqlWalker)
     {
-        return $this->dateExpression->dispatch($sqlWalker)."::timestamp::date";
+        $driver = $sqlWalker->getConnection()->getDriver();
+
+        switch($driver) {
+            case ("pdo_mysql"):
+                return "DATE(".$this->dateExpression->dispatch($sqlWalker).")";
+                break;
+            case ("pdo_pgsql"):
+                return $this->dateExpression->dispatch($sqlWalker)."::timestamp::date";
+                break;
+            default:
+                return $this->dateExpression->dispatch($sqlWalker);
+                break;
+        }
     }
 }
